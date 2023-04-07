@@ -7,11 +7,13 @@ prompt += "\nEnter. 'quit' when you are finished entering your age. "
 
 while True: 
     age = input(prompt)
+    
     if age == 'quit':
         break
-    elif age <= 3:
+    
+    elif int(age) <= 3: 
         print(f"your ticket price is free!")
-    elif age >= 3 and <= 12:
+    elif int(age) >= 3 and int(age) <= 12:
         print(f"your tickets are 10 dollars")
     else:
         print(f"considering you are {age}. you will recieve the price of regular admission.\nyour admission price is 15 dollars.")
